@@ -9,7 +9,7 @@ public class Kata2 {
         Histogram histo = new Histogram(array);
        Map<Integer,Integer> histogr = histo.getHistogram();
        for (int key : histogr.keySet()) {
-           System.out.println(key + "==>" + histogr.get(key));
+           System.out.println(key + "==>" + histogr.get(key)); 
        }
        
        System.out.println("=============");
