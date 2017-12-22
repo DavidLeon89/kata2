@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class Kata2 {
     public static void main(String[] args) {
-        int[] array = {1,1,1,100,2,4,5,6,8,8,4,5,6,2,-4};
-        Histogram histo = new Histogram(array);
+        int[] datos = {1,1,1,100,2,4,5,6,8,8,4,5,6,2,-4};
+        Histogram histo = new Histogram(datos);
        Map<Integer,Integer> histogr = histo.getHistogram();
        for (int key : histogr.keySet()) {
            System.out.println(key + "==>" + histogr.get(key)); 
