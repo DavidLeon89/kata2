@@ -5,12 +5,12 @@ import java.util.Arrays;
 
 public class Kata2 {
     public static void main(String[] args) {
-        Integer[] datos = {1,1,1,100,2,4,5,6,8,8,4,5,6,2,-4};
+        String[] datos = {"Rosa", "Pepe", "Juan", "Pepe", "Pepe", "Rosa"};        
         Histogram histo = new Histogram(datos);
-        Map<Integer,Integer> histogr = histo.getHistogram();
-        for (int key : histogr.keySet()) {
+        Map<String,Integer> histogr = histo.getHistogram();
+        for (String key : histogr.keySet()){
            System.out.println(key + "==>" + histogr.get(key)); 
-       }
+        }
        
        System.out.println("=============");
        System.out.println(Arrays.asList(histogr));
